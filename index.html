@@ -7,15 +7,243 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
     <style type="text/css">
-      .jumbotron{
-  height: 12rem;
+      .navbar-dark{
+    background-color: #512DA8;
+}
+.modal-content{
+    background-color: rgb(29, 29, 29);
+    color:floralwhite;
+}
+.modal-header{
+    border-bottom: 1px solid #292b2c;
+}
+ul {
+    list-style-type: none;
+    color: rgb(233, 176, 64);
+  }
+li{
+    color: floralwhite;
+}
+.footer{
+    background-color:#292b2c ;
+    margin:0px auto;
+    padding: 20px 0px;
+    color: floralwhite;
+}
+.btn-google i{  
+    border-radius: 50%;
+    height:54px;
+    width:54px;
+    line-height: 54px;
+    background-color: rgb(255, 255, 255, 0.1);
+    color: #fabf2c;
+}
+.footer i:hover{
+    color: floralwhite;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+.footer-joinus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fafafa;
+    background: #1a1b1d;
+    border-radius: 999px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.footer-joinus-text{
+    font-weight: 600;
+    font-size: 120%;
+    padding: 0 15px;
+    line-height: 1.15;
+    box-sizing: border-box;
+    text-align: left;
+    text-decoration: none;
+}
+.footer-joinus_button{
+    background: #fabf2c;
+    border-radius: 99px;
+    padding: 9px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1a1b1d;
+    min-width: 90px;
+    text-align: center;
+    text-decoration: none;
+    transition: .25s ease-out;
+}
+
+
+@media(max-width: 576px)
+{
+    html
+    {
+        font-size: 0.7rem;
+        overflow-x: hidden !important;
+    }
+    
+    .art img
+    {
+        width: 120px;
+        height: 100px;
+    }
+}
+@media(max-width:768px)
+{
+    html
+    {
+        overflow-x: hidden;
+    }
+    body
+    {
+        background: 100%;
+    }
+    .extra
+    {
+        visibility: hidden;
+    }
+}
+@media(min-width:768px)
+{
+    html
+    {
+        overflow-x: hidden;
+    }
+    body
+    {
+        background: 100%;
+    }
+    .pagination
+    {
+        margin-top: 15%;
+    }
+    .art img
+    {
+        width: 250px;
+        height: 200px;
+    }
+}
+@media(min-width: 992px)
+{
+    html
+    {
+        overflow-x: hidden;
+    }
+    body
+    {
+        background: 100%;
+    }
+    .art
+    {
+        float: none !important;
+        clear:both;
+    }
+    .art h5
+    {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+
+    }
+    .art img 
+    {
+        width: 250px;
+        height: 200px;
+    }
+    .extra h5
+    {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+    }
+    .extra img
+    {
+        width: 150px;
+        height: 120px;
+        margin-top: 30%;
+    }
+    .first
+    {
+        border: 1px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px ;
+    }
+    .first img
+    {
+        margin-top: 0;
+        margin-bottom: 35%;
+    }
+    .last
+    {
+        border: 1px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px ;
+    }
 }
     </style>
-    <title>Articles Page</title>
+
+    <title>Aricles Page</title>
   </head>
   <body style="font-family: Roboto;">
+    <!-- Navbar-->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4" style=" background-color: rgb(29, 29, 29);">
+          <div class="row">
+              <ul class="col-md-3">
+              What's Popular?
+              <li>item1</li>
+              <li>item2</li>
+              <li>item3</li>
+              <li>item4</li>
+          </ul>
+              <ul class="col-md-3" >
+              Blog Specials
+              <li>Basics 101</li>
+              <li>Tech Tuedays</li>
+              <li>Opening the Kimono</li>
+              <li>Ones to Watch</li>
+           </ul>
+           <ul class="col-md-3" >
+              Latest Updates
+              <li>Basics 101</li>
+              <li>Tech Tuedays</li>
+              <li>Opening the Kimono</li>
+              <li>Ones to Watch</li>
+           </ul>
+           <ul class="col-md-3" >
+             Latest Videos
+              <li>Basics 101</li>
+              <li>Tech Tuedays</li>
+              <li>Opening the Kimono</li>
+              <li>Ones to Watch</li>
+           </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark"style=" background-color: rgb(29, 29, 29);">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="navbar-text">
+            <button class="btn btn-group btn-warning">
+              <a data-toggle="modal" data-target="#joinmodal" style="color: black;">
+                  Join Us
+              </a>
+              </button>
+          </span>
+      </nav>
+    </div>
+
     <p class="text-center mt-5 p-0">Home > Basics101 > WebDev > Beginner > RoadMapTowardsLearning</p>
    <h1 class="container text-center" style="font-weight: bold;line-height: 39px;">Road Map Towards Learning Web Dev</h1>
     <p class="text-center mt-3"><span style="font-weight: bold;">by Jack</span><span class="ml-2">|20 June 2020</span></p>
@@ -32,33 +260,63 @@
       <button type="button" class="btn btn-warning mr-1">Yes</button>
       <button type="button" class="btn btn-outline-dark ml-1">No</button>
     </div>
+  <p class="text-center mt-5"><span class="" style="font-weight: bold; font-size: 2rem;">Share It!<a class="text-warning" href="#"><i class="fi-xwluxl-share-wide"></i></a></span></p>
+
+
     <div class="d-flex justify-content-center mt-5">
   <button type="button" class="btn btn-dark text-warning" style="font-weight: bold; background-color: black; border-radius: 17px;"><span class="mr-1">Next</span><i class="fi-cwlrxl-chevron-solid"></i></button>
 </div>
 <div class="mt-5" style="background-color:#f9a602;">
   <div class="container contain">
       <h3 class="display-5 pt-3 pl-2" style="font-weight: bold;">Related Content</h3>
-      <div class="row align-items-between justify-content-around ">
-        <div class="col-5 col-lg-2 jumbotron text-white" style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg); background-repeat: no-repeat;background-size: cover; border-radius: 48px;">
+      <div class="row align-items-between justify-content-between ">
+        <div class="col-md-2 col-sm-6 col-6 jumbotron text-white" style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg); background-repeat: no-repeat;background-size: cover; border-radius: 48px;">
           <h5 class="display-5">Interactivity with JS</h5>
           <br><p>By ABC</p>
               </div>
-              <div class="col-5 col-lg-2 jumbotron text-white" style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg); background-repeat: no-repeat;background-size: cover; border-radius: 48px">
+              <div class="col-md-2 col-sm-6 col-6 jumbotron text-white" style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg); background-repeat: no-repeat;background-size: cover; border-radius: 48px">
           <h5 class="display-5">Interactivity with JS</h5>
           <br><p>By ABC</p>
               </div>
-              <div class="col-5 col-lg-2 jumbotron text-white" style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg); background-repeat: no-repeat;background-size: cover;border-radius: 48px">
+              <div class="col-md-2 col-sm-6 col-6 jumbotron text-white" style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg); background-repeat: no-repeat;background-size: cover;border-radius: 48px">
           <h5 class="display-5">Interactivity with JS</h5>
           <br><p>By ABC</p>
               </div>
-              <div class="col-5 col-lg-2 jumbotron text-white" style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg); background-repeat: no-repeat;background-size: cover; border-radius: 48px">
+              <div class="col-md-2 col-sm-6 col-6 jumbotron text-white" style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg); background-repeat: no-repeat;background-size: cover; border-radius: 48px">
           <h5 class="display-5">Interactivity with JS</h5>
           <br><p>By ABC</p>
               </div>
             </div>
           </div>
         </div>
-
+<!--Footer-->
+<footer class="footer">
+  <div class="container">
+      <div class="row">             
+          
+          <div class="col-12 col-sm-6 footer-joinus">
+              <span class="footer-joinus-text">Have something to post or suggest?</span>
+              <a class="footer-joinus_button" href="mailto:alphabiocell@gmail.com">Join us</a>
+              
+          </div>
+         
+          
+          <div class="col-12 col-sm-6 align-self-center ">
+              <div class="text-center"> 
+                  <a class="btn btn-social-icon btn-google" href="https://www.instagram.com/alphabiocell/?hl=en"><i class="fa fa-instagram fa-lg"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="https://www.facebook.com/pages/category/College---University/Alpha-Bio-Cell-2837739956251320/"><i class="fa fa-facebook fa-lg"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="https://www.linkedin.com/company/alpha-bio-cell"><i class="fa fa-linkedin fa-lg"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="mailto:alphabiocell@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
+              </div>
+          </div>
+     </div>
+     <div class="row justify-content-center">             
+          <div class="col-auto">
+              <p>© Copyright 2020 Alpha Bio Cell</p>
+          </div>
+     </div>
+  </div>
+</footer>
 
                 
               
